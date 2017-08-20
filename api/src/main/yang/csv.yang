@@ -1,0 +1,162 @@
+module csv {
+    yang-version 1;
+    namespace "urn:opendaylight:params:xml:ns:yang:csv";
+    prefix "csv";
+
+    revision "2015-01-05" {
+        description "Initial revision of csv model";
+    }
+    
+    grouping element {
+    	leaf atomic-number {
+            description "atomic number";
+            type string;
+            mandatory true;
+        }
+        
+        leaf element-name {
+            description "element name";
+            type string;
+            mandatory true;
+        }
+        
+         leaf symbol {
+            description "symbol";
+            type string;
+            mandatory true;
+        }
+        
+         leaf atomic-weight {
+            description "atomic weight";
+            type string;
+            mandatory true;
+        }
+        
+        
+        
+        leaf period {
+            description "period";
+            type string;
+            mandatory true;
+        }
+        
+        leaf group {
+            description "group";
+            type string;
+            mandatory true;
+        }
+        
+        leaf phase {
+            description "phase";
+            type string;
+            mandatory true;
+        }
+        
+         leaf mst-stable-cryst {
+            description "most stable crystal";
+            type string;
+            
+        }
+        
+         leaf typ {
+            description "type";
+            type string;
+            
+        }
+        
+        leaf ionic-radius {
+            description "ionic radius";
+            type string;
+            
+        }
+        
+         leaf atomic-radius {
+            description "atomic radius";
+            type string;
+            
+        }
+        
+         leaf elec-neg {
+            description "electonegativity";
+            type string;
+            
+        }
+        
+         leaf first-ion-pot {
+            description "first ionization potential";
+            type string;
+            
+        }
+        
+         leaf density {
+            description "density";
+            type string;
+            
+        }
+        
+         leaf melting-point {
+            description "melting-point";
+            type string;
+            
+        }
+        
+        leaf boiling-point {
+            description "boiling-point";
+            type string;
+            
+        }
+    	
+    	 leaf isotopes {
+            description "isotopes";
+            type string;
+            
+        }
+        
+         leaf discoverer {
+            description "discoverer";
+            type string;
+            
+        }
+        
+         leaf year-of-discovery {
+            description "year-of-discovery";
+            type string;
+            
+        }
+        
+        leaf spe-heat-cap {
+            description "spe-heat-cap";
+            type string;
+            
+        }
+        
+        leaf elec-config {
+            description "elec-config";
+            type string;
+            
+        }
+        
+        leaf disp-row {
+            description "disp-row";
+            type string;
+            
+        }
+        
+        leaf disp-colmn {
+            description "disp-colmn";
+            type string;
+            
+        }
+       
+    }
+    
+    container elements{
+    
+    	list element {
+            key atomic-number;
+            uses element;
+        }
+     }
+        
+    
+}

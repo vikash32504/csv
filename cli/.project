@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+  <name>csv-cli</name>
+  <comment>OpenDaylight is leading the transformation to Open Software Defined Networking (SDN). For more information, please see https://www.opendaylight.org. NO_M2ECLIPSE_SUPPORT: Project files created with the maven-eclipse-plugin are not supported in M2Eclipse.</comment>
+  <projects>
+    <project>csv-api</project>
+  </projects>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>
